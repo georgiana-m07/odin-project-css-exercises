@@ -27,3 +27,72 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* solution */
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding-left: 1rem;
+  font-weight: 900;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.sidebar {
+  padding: 1rem;
+  width: 300px;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/*There is 48px padding around the 'cards' section.
+- The cards are arranged horizontally, 
+but wrap to multiple lines when they run out of room on the page.*/
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 24px;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  padding: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
